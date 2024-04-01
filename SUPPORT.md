@@ -1,6 +1,6 @@
 # Support
 
-## How to file issues and get help
+## How to file issues and get help and smile
 
 This project uses GitHub issues to track bugs and feature requests. Please search the existing issues before filing new issues to avoid duplicates. For new issues, file your bug or feature request as a new issue.
 
