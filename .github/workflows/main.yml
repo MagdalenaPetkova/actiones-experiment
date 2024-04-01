@@ -8,8 +8,10 @@ on:
     
 jobs:
   here_I_write_my_own_titile:
-    runs-on: ubuntu-latest
-    steps:
+   env:
+            MY_ENV: "John Doe"
+   runs-on: ubuntu-latest
+   steps:
       - name: Greet the User by me
         run: echo "Hello World!"
       - name: Show directory before checkout
@@ -17,5 +19,9 @@ jobs:
       - name: Checkout our code
         uses: actions/checkout@v3
       - name: Show directory after checkout
-        run: ls -l  
+        run: ls -l
+      - name: Show env vars
+        run: |
+          echo "Hello $MY_ENV"
+          echo "Hello $GITHUB_ACTOR"
     
