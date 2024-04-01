@@ -30,7 +30,7 @@ describe("<Home />", (): void => {
   it("renders an 'Add to collection' Button for each octocat when not logged in.", async (): Promise<void> => {
     const inMemoryAPI = createInMemoryOctocatApi();
     inMemoryAPI.addOctocats([
-      createTestOctocat({ id: "#1", name: "Octocat 1" }),
+      createTestOctocat({ id: "#1", name: "Octocat 10" }),
     ]);
 
     renderWithProviders({ component: <Home />, inMemoryApi: inMemoryAPI });
